@@ -1,0 +1,28 @@
+{
+  "name": "lotboss",
+  "version": "1.9.0",
+  "description": "Measure parking lots from satellite, price sealcoat, crack fill and striping jobs, and send professional quotes.",
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node --test test/*.mjs",
+    "test:browser": "node test/e2e.cjs shots",
+    "test:abuse": "node test/abuse.cjs shots",
+    "test:attack": "node test/attack.cjs shots",
+    "test:monkey": "node test/chaos.cjs shots 6 250",
+    "test:money": "node test/money.cjs shots",
+    "test:layout": "node test/layout.cjs shots",
+    "test:schedule": "node test/schedule.cjs shots",
+    "test:ai": "node test/ai.cjs shots",
+    "test:follow": "node test/follow.cjs shots",
+    "test:webform": "node test/webform.cjs shots",
+    "test:extras": "node test/extras.cjs shots"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.4",
+    "@turf/turf": "^7.1.0",
+    "esbuild": "^0.24.0",
+    "leaflet": "^1.9.4"
+  },
+  "private": true
+}
